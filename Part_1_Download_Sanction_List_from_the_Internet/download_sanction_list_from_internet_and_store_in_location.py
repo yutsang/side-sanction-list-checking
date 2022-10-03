@@ -9,5 +9,7 @@ def download_file(url, filename):
 
 URL = "https://scsanctions.un.org/consolidated/"
 Location = "/Users/ytsang/Desktop/Github/side-sanction-list-checking/Sanction_List"
+Filename = "HKICPA_UN Consolidated list_"+str(date.today())
 
-download_file(URL, "HKICPA_UN Consolidated list_"+str(date.today()))
+download_file(URL, Filename)
+print(Filename)
