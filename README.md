@@ -9,5 +9,16 @@ The project would be separated into several parts:
 * Analyse the dataframe and extract the sanctioned persons and companies from the dataframe into a readable format
 * Compare the current client list to the sanctioned list by using the [Fuzzy Lookup](https://www.mrexcel.com/board/threads/fuzzy-matching-new-version-plus-explanation.195635/post-955137) by Excel VBA and create the macro to do the one-click action for officers so as to reduce the training time and probably automate the process in the future
 
+## User Guide:  
+E.g. On-going Monitoring, dated 2021 Oct  
+* Step 1: Filter the Control Sheet Column B, keep on or before 2021 Oct only(when roll back)  
+* Step 2: Copy and paste the template for on-going sanction check template, named “20xxxxxx_On-going Sanction Check.xlsm” and Select “Enable Macros”  
+* Step 3: Copy Control List Column A:K  to “Core” Tab in “20xxxxxx_On-going Sanction Check.xlsm”, select “Paste Value”   
+* Step 4: from “AML-Sanction check - monitoring (To print)/ Sanction lists (to print)” Folder, Open “HKICPA_UN Consolidated list_20211019.csv”  
+* Step 5: Right-click the Tap “HKICPA_UN Consolidated list_202” in the excel file “HKICPA_UN Consolidated list_20211019.csv”, select “Move or Copy…”, select “(move to end)“ and tick “Create a copy”, then confirm the movement by clicking “OK”, now the sanction list is moved to the template  
+* Step 6: Open the template again and rename the Tap “HKICPA_UN Consolidated list_202” to “Sanction List”  
+* Step 7: Go back to the Control Sheet, Copy “Company Name” (Both Chinese and English) to the Sanction Check template “Company Name” Tap, there is a written formula in cell C2, right under “Merge” tap, Then double-click the  bottom-right of the C2 Cell to apply the formula to all   
+* Step 8: Copy the client name from the control sheet,   
+
 References: 
 Fuzzy Lookup Algorithm: https://www.mrexcel.com/board/threads/fuzzy-matching-new-version-plus-explanation.195635/post-955137
